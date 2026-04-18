@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bg-primary: #FFFFFF;
+  --color-bg-subtle: #F0F4F8;
+  --color-accent-blue: #1D4ED8; /* Deeper Indigo */
+  --color-accent-vibrant: #6366F1; /* Vibrant Violet-Blue */
+  --color-accent-cyan: #06B6D4; /* Neon Cyan */
+  --color-accent-magenta: #D946EF; /* Vibrant Magenta */
+  --color-accent-emerald: #10B981; /* Vibrant Emerald */
+  --color-accent-slate: #0F172A; /* Midnight Slate */
+  --color-ink-dark: #0F172A;
+  --color-ink-muted: #475569;
+  --color-border: #E2E8F0;
+  
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-ink-dark antialiased font-sans;
+  }
+}
